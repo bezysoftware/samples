@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="NameDayClient.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NameDayClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <StackPanel  VerticalAlignment="Center">
+        <CalendarDatePicker HorizontalAlignment="Center" x:Name="Calendar" />
+        <Button Content="Get Name day" HorizontalAlignment="Center" Click="Button_Click" Margin="0 12" />
+        <TextBlock Text="Names" FontWeight="Bold" HorizontalAlignment="Center" />
+        <ListBox x:Name="Names" HorizontalAlignment="Center" />
+        <TextBlock Text="Contacts" FontWeight="Bold" HorizontalAlignment="Center" />
+        <ListBox x:Name="Contacts" HorizontalAlignment="Center" />
+    </StackPanel>
+</Page>
